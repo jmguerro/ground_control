@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="" />
+    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="rehaciendo pq no me gustaba">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/Mars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/Mars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Cardinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Cardinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,8 +47,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "/Users/jmguerro/Desktop/Mars/ground_control",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -51,6 +60,18 @@
       <option name="presentableId" value="Default" />
       <updated>1680247364863</updated>
     </task>
+    <task id="LOCAL-00001" summary="rehaciendo pq no me gustaba">
+      <created>1680248582727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680248582727</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rehaciendo pq no me gustaba" />
+    <option name="LAST_COMMIT_MESSAGE" value="rehaciendo pq no me gustaba" />
   </component>
 </project>
