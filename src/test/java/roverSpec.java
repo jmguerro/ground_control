@@ -1,13 +1,10 @@
-import assets.cardinal.Cardinal;
-import assets.cardinal.Location;
-import assets.cardinal.North;
-import assets.cardinal.South;
+import assets.cardinal.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class roverSpec {
-
+/*
     @Test
     void exampleTest() {
     String cardinal = new North().getClass().getSimpleName();
@@ -39,6 +36,132 @@ public class roverSpec {
 
     }
 
+*/
 
 
+
+    @Test
+    void forwardFromNorth() {
+
+        //Then
+        Location location = new Location(5,5,new North());
+        //Given
+        location.fordward();
+        //When
+        assertEquals(5,location.getX());
+        assertEquals(6,location.getY());
+
+    }
+
+
+    @Test
+    void forwardFromWest() {
+
+        //Then
+        Location location = new Location(5,5,new West());
+        //Given
+        location.fordward();
+        //When
+        assertEquals(4,location.getX());
+        assertEquals(5,location.getY());
+
+    }
+
+
+    @Test
+    void forwardFromSouth() {
+
+        //Then
+        Location location = new Location(5,5,new South());
+        //Given
+        location.fordward();
+        //When
+        assertEquals(5,location.getX());
+        assertEquals(4,location.getY());
+
+    }
+
+
+    @Test
+    void forwardFromEast() {
+
+        //Then
+        Location location = new Location(5,5,new East());
+        //Given
+        location.fordward();
+        //When
+        assertEquals(6,location.getX());
+        assertEquals(5,location.getY());
+
+    }
+
+
+
+    @Test
+    void limitFromEast() {
+
+        //Then
+        Location location = new Location(9,9,new East());
+        //Given
+        location.fordward();
+        //When
+        assertEquals(0,location.getX());
+        assertEquals(9,location.getY());
+
+    }
+
+    @Test
+    void limitFromNorth() {
+
+        //Then
+        Location location = new Location(9,9,new North());
+        //Given
+        location.fordward();
+        //When
+        assertEquals(9,location.getX());
+        assertEquals(0,location.getY());
+
+    }
+
+    @Test
+    void limitFromSouth() {
+
+        //Then
+        Location location = new Location(9,9,new South());
+        //Given
+        location.backwards();
+        //When
+        assertEquals(9,location.getX());
+        assertEquals(0,location.getY());
+
+    }
+    @Test
+    void limitFromWest() {
+
+        //Then
+        Location location = new Location(9,9,new West());
+        //Given
+        location.backwards();
+        //When
+        assertEquals(0,location.getX());
+        assertEquals(9,location.getY());
+
+    }
+
+/*
+    @Test
+    void exampleTest3() {
+
+
+        Location location = new Location(9,9,new East());
+
+        location.fordward();
+        //Given
+        assertEquals("xq", location);
+        //assertEquals(0,cardinal);
+        //When
+
+    }
+
+*/
 }

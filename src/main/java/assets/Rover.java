@@ -1,6 +1,6 @@
 package assets;
 
-import assets.exceptions.orderNotFoundException;
+import assets.exceptions.OrderNotFoundException;
 
 
 public class Rover {
@@ -20,7 +20,7 @@ public class Rover {
             case 'B' -> System.out.println("xd2");
             case 'L' -> System.out.println("bruh");
             case 'R' -> System.out.println("madude");
-            default -> throw new orderNotFoundException("Command does not met requirement expected.");
+            default -> throw new OrderNotFoundException("Command does not met requirement expected.");
 
 
         }

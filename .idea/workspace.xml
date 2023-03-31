@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="spec test initzialice">
+    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="logica de movimientos&#10;&#10;forward y backwards bien echos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/Mars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/Mars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/Rover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Cardinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Cardinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/exceptions/orderNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/exceptions/OrderNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/roverSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/roverSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/roverSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/roverSpec.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +27,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f8582043-f441-4e76-a8b1-bd7057887885" />
+        <option name="url" value="https://github.com/jmguerro/ground_control.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -52,7 +63,7 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.roverSpec.exampleTest2">
+  <component name="RunManager" selected="JUnit.roverSpec">
     <configuration name="roverSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rover_rover" />
       <option name="PACKAGE_NAME" value="" />
@@ -62,21 +73,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roverSpec.exampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="roverSpec.limitForwardFromEast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rover_rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="roverSpec" />
-      <option name="METHOD_NAME" value="exampleTest" />
+      <option name="METHOD_NAME" value="limitForwardFromEast" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roverSpec.exampleTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="roverSpec.limitForwardFromWest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rover_rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="roverSpec" />
-      <option name="METHOD_NAME" value="exampleTest2" />
+      <option name="METHOD_NAME" value="limitForwardFromWest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roverSpec.limitFromSouth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rover_rover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="roverSpec" />
+      <option name="METHOD_NAME" value="limitFromSouth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roverSpec.limitFromWest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rover_rover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="roverSpec" />
+      <option name="METHOD_NAME" value="limitFromWest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,9 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.roverSpec.exampleTest2" />
-        <item itemvalue="JUnit.roverSpec.exampleTest" />
         <item itemvalue="JUnit.roverSpec" />
+        <item itemvalue="JUnit.roverSpec.limitFromSouth" />
+        <item itemvalue="JUnit.roverSpec.limitFromWest" />
+        <item itemvalue="JUnit.roverSpec.limitForwardFromWest" />
+        <item itemvalue="JUnit.roverSpec.limitForwardFromEast" />
       </list>
     </recent_temporary>
   </component>
@@ -120,13 +153,28 @@
       <option name="project" value="LOCAL" />
       <updated>1680250468155</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="logica de movimientos&#10;&#10;forward y backwards bien echos">
+      <created>1680255088600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680255088600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="logica de movimientos&#10;&#10;forward y backwards bien echos">
+      <created>1680255097565</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680255097565</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rehaciendo pq no me gustaba" />
     <MESSAGE value="logica fordward backward , basada &#10;&#10;vector bidimensional" />
     <MESSAGE value="spec test initzialice" />
-    <option name="LAST_COMMIT_MESSAGE" value="spec test initzialice" />
+    <MESSAGE value="logica de movimientos&#10;&#10;forward y backwards bien echos" />
+    <option name="LAST_COMMIT_MESSAGE" value="logica de movimientos&#10;&#10;forward y backwards bien echos" />
   </component>
 </project>
