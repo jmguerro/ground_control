@@ -105,22 +105,36 @@ public class Location {
     }
 
 
-
-    public void createObstacle(){
+    public void createObstacle() {
 
         Random random = new Random();
         int randomNumberX = random.nextInt(10);
         int randomNumberY = random.nextInt(10);
-        int i= 0;
-        coordinatesObstacle.add(i,new Obstacle(randomNumberX,randomNumberY));
+        int i = 0;
+        coordinatesObstacle.add(i, new Obstacle(randomNumberX, randomNumberY));
 
 
     }
 
-    public void sonarObstacle(){
+    public void howManyObstacle() {
+        Random random = new Random();
+        for (int i = 0; i < 10; i++) {
+
+            int randomNumberX = random.nextInt(5);
+            if (randomNumberX == 1) {
+
+                createObstacle();
+
+            }
+        }
+
+    }
+
+
+    public void sonarObstacle() {
         System.out.println("Scanning");
         System.out.println("----------------");
-        for (Obstacle i: coordinatesObstacle) {
+        for (Obstacle i : coordinatesObstacle) {
             System.out.println("Position X: " + i.getObstacleX() + " " + "Position Y : " + i.getObstacleY());
         }
     }
