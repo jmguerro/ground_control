@@ -141,21 +141,10 @@ public class Location {
         }
     }
 
-    public boolean iSeeObstacleCantMove() {
-        for (Obstacle i : coordinatesObstacle) {
-            if (i.getObstacleX() == getX() && i.getObstacleY() == getY()) {
-                System.out.println("Cant move here");
-                return true;
-            }
-
-        }
-        return false;
-    }
 
     public void validateMove() {
         for (Obstacle i : coordinatesObstacle) {
             if (i.getObstacleX() == getX() && i.getObstacleY() == getY()) {
-                System.out.println("Cant move here");
                 throw new MovementException("Can't move");
             }
 
