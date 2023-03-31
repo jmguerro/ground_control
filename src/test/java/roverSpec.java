@@ -334,7 +334,7 @@ public class roverSpec {
 
         Location location = new Location();
 
-        location.createObstacle();
+        location.howManyObstacle();
 
         location.sonarObstacle();
 

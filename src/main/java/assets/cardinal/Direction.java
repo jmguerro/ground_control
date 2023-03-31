@@ -8,4 +8,6 @@ public interface Direction {
     Location moveForward();
 
     Location moveBackward();
+
+
 }

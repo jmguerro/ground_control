@@ -60,21 +60,29 @@ public class Location {
     public void fordward() {
 
 
-        x += cardinal.moveForward().getX();
+        if (iSeeObstacleCantMove()) {
 
-        y += cardinal.moveForward().getY();
-        limitAxisX();
-        limitAxisY();
+        } else {
+            x += cardinal.moveForward().getX();
+
+            y += cardinal.moveForward().getY();
+            limitAxisX();
+            limitAxisY();
+        }
     }
 
     public void backwards() {
 
+        if (iSeeObstacleCantMove()) {
 
-        x += cardinal.moveBackward().getX();
+        } else {
 
-        y += cardinal.moveBackward().getY();
-        limitAxisX();
-        limitAxisY();
+            x += cardinal.moveBackward().getX();
+
+            y += cardinal.moveBackward().getY();
+            limitAxisX();
+            limitAxisY();
+        }
     }
 
     //manera procedural antigua precambio a poli
@@ -108,8 +116,8 @@ public class Location {
     public void createObstacle() {
 
         Random random = new Random();
-        int randomNumberX = random.nextInt(10);
-        int randomNumberY = random.nextInt(10);
+        int randomNumberX = random.nextInt(1, 10);
+        int randomNumberY = random.nextInt(1, 10);
         int i = 0;
         coordinatesObstacle.add(i, new Obstacle(randomNumberX, randomNumberY));
 
@@ -138,4 +146,16 @@ public class Location {
             System.out.println("Position X: " + i.getObstacleX() + " " + "Position Y : " + i.getObstacleY());
         }
     }
+
+    public boolean iSeeObstacleCantMove() {
+        for (Obstacle i : coordinatesObstacle) {
+            if (i.getObstacleX() == getX() && i.getObstacleY() == getY()) {
+                System.out.println("Cant move here");
+                return true;
+            }
+
+        }
+        return false;
+    }
+
 }

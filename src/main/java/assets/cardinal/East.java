@@ -1,6 +1,8 @@
 package assets.cardinal;
 
 public class East implements Direction {
+
+    private  Obstacle coordinatesObstacle
     @Override
     public Direction turnRigth() {
         return new North();

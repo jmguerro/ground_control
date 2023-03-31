@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="">
+    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="obstacle randomicer and sonar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/roverSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/roverSpec.java" afterDir="false" />
@@ -211,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680267216467</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="obstacle randomicer and sonar">
+      <created>1680270446438</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680270446438</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -225,27 +232,7 @@
     <MESSAGE value="gitignore" />
     <MESSAGE value="reimplementacion polimorfismo" />
     <MESSAGE value="testeado finalizado de todo , falta obstaculos solo y donete" />
-    <option name="LAST_COMMIT_MESSAGE" value="testeado finalizado de todo , falta obstaculos solo y donete" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="obstacle randomicer and sonar" />
+    <option name="LAST_COMMIT_MESSAGE" value="obstacle randomicer and sonar" />
   </component>
 </project>
