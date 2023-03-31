@@ -1,6 +1,7 @@
 package assets.cardinal;
 
 import assets.Mars;
+import assets.exceptions.MovementException;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -59,30 +60,23 @@ public class Location {
 
     public void fordward() {
 
+        x += cardinal.moveForward().getX();
 
-        if (iSeeObstacleCantMove()) {
+        y += cardinal.moveForward().getY();
+        validateMove();
 
-        } else {
-            x += cardinal.moveForward().getX();
-
-            y += cardinal.moveForward().getY();
-            limitAxisX();
-            limitAxisY();
-        }
+        limitAxisX();
+        limitAxisY();
     }
 
     public void backwards() {
+        x += cardinal.moveBackward().getX();
 
-        if (iSeeObstacleCantMove()) {
+        y += cardinal.moveBackward().getY();
+        validateMove();
 
-        } else {
-
-            x += cardinal.moveBackward().getX();
-
-            y += cardinal.moveBackward().getY();
-            limitAxisX();
-            limitAxisY();
-        }
+        limitAxisX();
+        limitAxisY();
     }
 
     //manera procedural antigua precambio a poli
@@ -156,6 +150,16 @@ public class Location {
 
         }
         return false;
+    }
+
+    public void validateMove() {
+        for (Obstacle i : coordinatesObstacle) {
+            if (i.getObstacleX() == getX() && i.getObstacleY() == getY()) {
+                System.out.println("Cant move here");
+                throw new MovementException("Can't move");
+            }
+
+        }
     }
 
 }

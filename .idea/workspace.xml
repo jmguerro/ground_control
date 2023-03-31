@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="obstacle randomicer and sonar">
+    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="obstaculos creados">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/roverSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/roverSpec.java" afterDir="false" />
     </list>
@@ -65,22 +67,12 @@
       <recent name="assets.cardinal" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.roverSpec.createObstacleTest">
+  <component name="RunManager" selected="JUnit.roverSpec.whenRoverTriesToMoveIntoObstacleThenThrowsMovementException">
     <configuration name="roverSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rover_rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="roverSpec" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="roverSpec.backFromSouth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rover_rover" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="roverSpec" />
-      <option name="METHOD_NAME" value="backFromSouth" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,13 +107,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="roverSpec.whenRoverTriesToMoveIntoObstacleThenThrowsMovementException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rover_rover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="roverSpec" />
+      <option name="METHOD_NAME" value="whenRoverTriesToMoveIntoObstacleThenThrowsMovementException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.roverSpec.whenRoverTriesToMoveIntoObstacleThenThrowsMovementException" />
         <item itemvalue="JUnit.roverSpec.createObstacleTest" />
         <item itemvalue="JUnit.roverSpec" />
         <item itemvalue="JUnit.roverSpec.testOrderSelectorInvalidOrder" />
         <item itemvalue="JUnit.roverSpec.executeOrder66" />
-        <item itemvalue="JUnit.roverSpec.backFromSouth" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +220,28 @@
       <option name="project" value="LOCAL" />
       <updated>1680270446438</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="randomicer for all obstacles">
+      <created>1680270663355</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680270663355</updated>
+    </task>
+    <task id="LOCAL-00014" summary="obstacle class">
+      <created>1680270679201</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680270679201</updated>
+    </task>
+    <task id="LOCAL-00015" summary="obstaculos creados">
+      <created>1680271295543</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680271295543</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -233,6 +256,30 @@
     <MESSAGE value="reimplementacion polimorfismo" />
     <MESSAGE value="testeado finalizado de todo , falta obstaculos solo y donete" />
     <MESSAGE value="obstacle randomicer and sonar" />
-    <option name="LAST_COMMIT_MESSAGE" value="obstacle randomicer and sonar" />
+    <MESSAGE value="randomicer for all obstacles" />
+    <MESSAGE value="obstacle class" />
+    <MESSAGE value="obstaculos creados" />
+    <option name="LAST_COMMIT_MESSAGE" value="obstaculos creados" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java</url>
+          <line>156</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

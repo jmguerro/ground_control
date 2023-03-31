@@ -1,18 +1,25 @@
 import assets.Rover;
 import assets.cardinal.*;
+import assets.exceptions.MovementException;
 import assets.exceptions.OrderNotFoundException;
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.Executable;
+import java.util.ArrayList;
+import java.util.List;
+
 import static com.jayway.jsonpath.internal.path.PathCompiler.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class roverSpec {
 
     @Test
     void forwardFromNorth() {
 
+
         //Then
-        Location location = new Location(5, 5, new North());
+        Location location = new Location(5, 5, new North(), new ArrayList<>());
         //Given
         location.fordward();
         //When
@@ -62,7 +69,6 @@ public class roverSpec {
         assertEquals(5, location.getY());
 
     }
-
 
 
     @Test
@@ -119,8 +125,6 @@ public class roverSpec {
         assertEquals(5, location.getY());
 
     }
-
-
 
 
     @Test
@@ -299,13 +303,11 @@ public class roverSpec {
     void executeOrder66() {
 
         //Then
-        Rover rover = new Rover(new Location(0,0,new South()));
-
-        rover.executeOrder("FL");
-
+        Rover rover = new Rover(new Location(0, 0, new South()));
 
 
         //Given
+        rover.executeOrder("FL");
 
         //When
         assertEquals(0, rover.getLocation().getX());
@@ -317,9 +319,9 @@ public class roverSpec {
 
     @Test
     public void testOrderSelectorInvalidOrder() {
-       Rover rover = Rover.builder()
-               .location(new Location(0,0,new South()))
-               .build();
+        Rover rover = Rover.builder()
+                .location(new Location(0, 0, new South()))
+                .build();
 
         try {
             rover.executeOrder("X");
@@ -330,14 +332,19 @@ public class roverSpec {
     }
 
     @Test
-    public void createObstacleTest() {
+    public void whenRoverTriesToMoveIntoObstacleThenThrowsMovementException() {
 
-        Location location = new Location();
+        var obstacle = new Obstacle(0, 1);
+        Location location = new Location(0, 0, new North());
+        location.setCoordinatesObstacle(List.of(obstacle));
+        var rover = new Rover(location);
+        rover.setLocation(location);
 
-        location.howManyObstacle();
-
-        location.sonarObstacle();
-
+        //
+        // location.howManyObstacle();
+        assertThrows(MovementException.class, () -> rover.executeOrder("F"));
 
     }
+
+
 }
