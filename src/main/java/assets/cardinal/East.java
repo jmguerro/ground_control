@@ -1,24 +1,14 @@
 package assets.cardinal;
 
-public class East extends Cardinal {
+public class East extends Direction {
     @Override
-    Cardinal turnRigth() {
+    Direction turnRigth() {
         return new North();
     }
 
     @Override
-    Cardinal turnLeft() {
+    Direction turnLeft() {
         return new South();
     }
 
-    @Override
-    void forwards(Location location) {
-
-        location.fordward();
-    }
-
-    @Override
-    void backwards(Location location) {
-        location.backwards();
-    }
 }

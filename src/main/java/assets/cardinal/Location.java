@@ -5,7 +5,6 @@ import assets.exceptions.MovementException;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
 @Data
 @AllArgsConstructor
@@ -16,7 +15,7 @@ public class Location {
 
     private int y = 0;
 
-    private Cardinal cardinal;
+    private Direction cardinal;
 
 
     public void limitAxisX() {
@@ -73,6 +72,14 @@ public class Location {
     }
 
 
+    public void turnleft(){
+  cardinal = cardinal.turnLeft();
+    }
+
+
+    public void turnRigth(){
+     cardinal = cardinal.turnRigth();
+    }
 
 
 }

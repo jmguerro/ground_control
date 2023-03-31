@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="logica de movimientos&#10;&#10;forward y backwards bien echos">
+    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="arreglo logica y testing forward y backwards funciona bien segun cardinal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/Mars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/Mars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/Rover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Cardinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/exceptions/orderNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/exceptions/OrderNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/roverSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/roverSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Rover.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/Rover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/Cardinal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/East.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/cardinal/East.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/cardinal/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/North.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/cardinal/North.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/South.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/cardinal/South.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/West.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/cardinal/West.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/roverSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/roverSpec.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,41 +83,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roverSpec.limitForwardFromEast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="roverSpec.turnRigthFromEast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rover_rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="roverSpec" />
-      <option name="METHOD_NAME" value="limitForwardFromEast" />
+      <option name="METHOD_NAME" value="turnRigthFromEast" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roverSpec.limitForwardFromWest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="roverSpec.turnRigthFromNort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rover_rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="roverSpec" />
-      <option name="METHOD_NAME" value="limitForwardFromWest" />
+      <option name="METHOD_NAME" value="turnRigthFromNort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roverSpec.limitFromSouth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="roverSpec.turnRigthFromSouth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rover_rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="roverSpec" />
-      <option name="METHOD_NAME" value="limitFromSouth" />
+      <option name="METHOD_NAME" value="turnRigthFromSouth" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roverSpec.limitFromWest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="roverSpec.turnRigthFromWest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rover_rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="roverSpec" />
-      <option name="METHOD_NAME" value="limitFromWest" />
+      <option name="METHOD_NAME" value="turnRigthFromWest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,10 +126,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.roverSpec" />
-        <item itemvalue="JUnit.roverSpec.limitFromSouth" />
-        <item itemvalue="JUnit.roverSpec.limitFromWest" />
-        <item itemvalue="JUnit.roverSpec.limitForwardFromWest" />
-        <item itemvalue="JUnit.roverSpec.limitForwardFromEast" />
+        <item itemvalue="JUnit.roverSpec.turnRigthFromNort" />
+        <item itemvalue="JUnit.roverSpec.turnRigthFromWest" />
+        <item itemvalue="JUnit.roverSpec.turnRigthFromSouth" />
+        <item itemvalue="JUnit.roverSpec.turnRigthFromEast" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680255097565</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="arreglo logica y testing forward y backwards funciona bien segun cardinal">
+      <created>1680258754705</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680258754705</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,6 +192,7 @@
     <MESSAGE value="logica fordward backward , basada &#10;&#10;vector bidimensional" />
     <MESSAGE value="spec test initzialice" />
     <MESSAGE value="logica de movimientos&#10;&#10;forward y backwards bien echos" />
-    <option name="LAST_COMMIT_MESSAGE" value="logica de movimientos&#10;&#10;forward y backwards bien echos" />
+    <MESSAGE value="arreglo logica y testing forward y backwards funciona bien segun cardinal" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglo logica y testing forward y backwards funciona bien segun cardinal" />
   </component>
 </project>
