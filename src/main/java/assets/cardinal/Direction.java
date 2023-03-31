@@ -1,12 +1,11 @@
 package assets.cardinal;
 
-public abstract class Direction {
+public interface Direction {
+    Direction turnRigth();
 
-    abstract Direction turnRigth();
+    Direction turnLeft();
 
-    abstract Direction turnLeft();
+    Location moveForward();
 
-
-
-
+    Location moveBackward();
 }

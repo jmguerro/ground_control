@@ -1,14 +1,24 @@
 package assets.cardinal;
 
-public class West extends Direction {
+public class West implements Direction {
     @Override
-    Direction turnRigth() {
+    public Direction turnRigth() {
         return new South();
     }
 
     @Override
-    Direction turnLeft() {
+    public  Direction turnLeft() {
         return new North();
     }
+
+    @Override
+    public Location moveForward() {
+        return new Location(-1,0);
+    }
+    @Override
+    public Location moveBackward() {
+        return new Location(1,0);
+    }
+
 
 }

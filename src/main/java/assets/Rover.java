@@ -2,11 +2,16 @@ package assets;
 
 import assets.cardinal.Location;
 import assets.exceptions.OrderNotFoundException;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Rover {
 
-    Location location;
+    private Location location;
 
 
     public void executeOrder(String orders) {
@@ -15,14 +20,13 @@ public class Rover {
             orderSelector(order);
         }
     }
-    public void executeOrderVersion2(Character [] commands) {
+
+    public void executeOrderVersion2(Character[] commands) {
 
         for (char order : commands) {
             orderSelector(order);
         }
     }
-
-
 
 
     public void orderSelector(char order) {

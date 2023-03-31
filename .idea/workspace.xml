@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="pos eso" />
+    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/Rover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/GroundControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/exceptions/MovementException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/exceptions/MovementException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/exceptions/OrderNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/exceptions/OrderNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/roverSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/roverSpec.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -55,6 +69,11 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="assets.cardinal" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.roverSpec">
     <configuration name="roverSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rover_rover" />
@@ -65,11 +84,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roverSpec.turnRigthFromEast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="roverSpec.executeOrder66" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rover_rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="roverSpec" />
-      <option name="METHOD_NAME" value="turnRigthFromEast" />
+      <option name="METHOD_NAME" value="executeOrder66" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roverSpec.forwardFromEast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rover_rover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="roverSpec" />
+      <option name="METHOD_NAME" value="forwardFromEast" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,16 +109,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="roverSpec" />
       <option name="METHOD_NAME" value="turnRigthFromNort" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="roverSpec.turnRigthFromSouth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rover_rover" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="roverSpec" />
-      <option name="METHOD_NAME" value="turnRigthFromSouth" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,10 +127,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.roverSpec" />
+        <item itemvalue="JUnit.roverSpec.forwardFromEast" />
+        <item itemvalue="JUnit.roverSpec.executeOrder66" />
         <item itemvalue="JUnit.roverSpec.turnRigthFromNort" />
         <item itemvalue="JUnit.roverSpec.turnRigthFromWest" />
-        <item itemvalue="JUnit.roverSpec.turnRigthFromSouth" />
-        <item itemvalue="JUnit.roverSpec.turnRigthFromEast" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680260803815</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="gitignore">
+      <created>1680260964892</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680260964892</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -191,6 +217,7 @@
     <MESSAGE value="arreglo logica y testing forward y backwards funciona bien segun cardinal" />
     <MESSAGE value="turn left/rigth funcional con testing" />
     <MESSAGE value="pos eso" />
-    <option name="LAST_COMMIT_MESSAGE" value="pos eso" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
 </project>

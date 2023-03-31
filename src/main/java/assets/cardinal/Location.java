@@ -17,12 +17,16 @@ public class Location {
 
     private Direction cardinal;
 
+    public Location(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
     public void limitAxisX() {
 
         if (getX() > Mars.MAX_AXIS_X) {
             setX(0);
-        }else if (getX() < Mars.MIN_AXIS_X){
+        } else if (getX() < Mars.MIN_AXIS_X) {
             setX(9);
         }
 
@@ -33,7 +37,7 @@ public class Location {
 
         if (getY() > Mars.MAX_AXIS_Y) {
             setY(0);
-        }else if (getY() < Mars.MIN_AXIS_Y){
+        } else if (getY() < Mars.MIN_AXIS_Y) {
             setY(9);
         }
 
@@ -41,21 +45,28 @@ public class Location {
     }
 
 
-
     public void fordward() {
 
 
-        switch (cardinal.getClass().getSimpleName()) {
-            case "South" -> setY(getY() - 1);
-            case "North" -> setY(getY() + 1);
-            case "West" -> setX(getX() - 1);
-            case "East" -> setX(getX() + 1);
-            default -> throw new MovementException("Invalid cardinal direction");
-        }
+        x += cardinal.moveForward().getX();
+
+        y += cardinal.moveForward().getY();
         limitAxisX();
         limitAxisY();
-        }
+    }
 
+    public void backwards() {
+
+
+        x += cardinal.moveBackward().getX();
+
+        y += cardinal.moveBackward().getY();
+        limitAxisX();
+        limitAxisY();
+    }
+
+    //manera procedural antigua precambio a poli
+/*
     public void backwards() {
 
 
@@ -71,14 +82,14 @@ public class Location {
 
     }
 
-
-    public void turnleft(){
-  cardinal = cardinal.turnLeft();
+*/
+    public void turnleft() {
+        cardinal = cardinal.turnLeft();
     }
 
 
-    public void turnRigth(){
-     cardinal = cardinal.turnRigth();
+    public void turnRigth() {
+        cardinal = cardinal.turnRigth();
     }
 
 

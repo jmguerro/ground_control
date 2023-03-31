@@ -1,15 +1,26 @@
 package assets.cardinal;
 
-public class South extends Direction {
+public class South implements Direction {
     @Override
-    Direction turnRigth() {
+    public Direction turnRigth() {
 
         return new East();
     }
 
     @Override
-    Direction turnLeft() {
+    public Direction turnLeft() {
         return new West();
     }
+
+    @Override
+    public Location moveForward() {
+        return new Location(0,-1);
+    }
+
+    @Override
+    public Location moveBackward() {
+        return new Location(0,1);
+    }
+
 
 }
