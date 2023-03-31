@@ -9,4 +9,7 @@ public abstract class Cardinal {
     abstract void forwards(Location location);
 
     abstract void backwards(Location location);
+
+
+
 }

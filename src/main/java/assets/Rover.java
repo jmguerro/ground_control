@@ -1,9 +1,8 @@
 package assets;
 
 import assets.exceptions.orderNotFoundException;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+
 public class Rover {
 
 

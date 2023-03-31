@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="rehaciendo pq no me gustaba">
+    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="spec test initzialice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/Mars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/Mars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assets/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/Rover.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Cardinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Cardinal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/roverSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/roverSpec.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +52,44 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.roverSpec.exampleTest2">
+    <configuration name="roverSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rover_rover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="roverSpec" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roverSpec.exampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rover_rover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="roverSpec" />
+      <option name="METHOD_NAME" value="exampleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roverSpec.exampleTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rover_rover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="roverSpec" />
+      <option name="METHOD_NAME" value="exampleTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.roverSpec.exampleTest2" />
+        <item itemvalue="JUnit.roverSpec.exampleTest" />
+        <item itemvalue="JUnit.roverSpec" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,11 +106,27 @@
       <option name="project" value="LOCAL" />
       <updated>1680248582727</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="logica fordward backward , basada &#10;&#10;vector bidimensional">
+      <created>1680250449040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680250449040</updated>
+    </task>
+    <task id="LOCAL-00003" summary="spec test initzialice">
+      <created>1680250468155</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680250468155</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rehaciendo pq no me gustaba" />
-    <option name="LAST_COMMIT_MESSAGE" value="rehaciendo pq no me gustaba" />
+    <MESSAGE value="logica fordward backward , basada &#10;&#10;vector bidimensional" />
+    <MESSAGE value="spec test initzialice" />
+    <option name="LAST_COMMIT_MESSAGE" value="spec test initzialice" />
   </component>
 </project>

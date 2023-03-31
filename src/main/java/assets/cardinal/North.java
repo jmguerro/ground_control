@@ -1,6 +1,6 @@
 package assets.cardinal;
 
-public class North extends Cardinal{
+public class North extends Cardinal {
     @Override
     Cardinal turnRigth() {
         return new East();
@@ -14,23 +14,12 @@ public class North extends Cardinal{
     @Override
     void forwards(Location location) {
 
-        if (getClass() == North.class) {
-            int x = location.getX() + 1;
-            int y = location.getY();
-            location.setX(x);
-            location.setY(y);
-        }
-
+        location.fordward();
 
     }
 
     @Override
     void backwards(Location location) {
-        if (getClass() == North.class) {
-            int x = location.getX() -1 ;
-            int y = location.getY();
-            location.setX(x);
-            location.setY(y);
-        }
+        location.backwards();
     }
 }

@@ -14,21 +14,11 @@ public class East extends Cardinal {
     @Override
     void forwards(Location location) {
 
-        if (getClass() == East.class) {
-            int x = location.getX();
-            int y = location.getY() + 1;
-            location.setX(x);
-            location.setY(y);
-        }
+        location.fordward();
     }
 
     @Override
     void backwards(Location location) {
-        if (getClass() == East.class) {
-            int x = location.getX();
-            int y = location.getY() - 1;
-            location.setX(x);
-            location.setY(y);
-        }
+        location.backwards();
     }
 }
