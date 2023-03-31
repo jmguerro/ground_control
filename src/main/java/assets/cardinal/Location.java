@@ -1,10 +1,14 @@
 package assets.cardinal;
 
 import assets.Mars;
-import assets.exceptions.MovementException;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 @Data
 @AllArgsConstructor
@@ -17,9 +21,17 @@ public class Location {
 
     private Direction cardinal;
 
+    private List<Obstacle> coordinatesObstacle = new ArrayList<>();
+
     public Location(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    public Location(int x, int y, Direction cardinal) {
+        this.x = x;
+        this.y = y;
+        this.cardinal = cardinal;
     }
 
     public void limitAxisX() {
@@ -93,4 +105,23 @@ public class Location {
     }
 
 
+
+    public void createObstacle(){
+
+        Random random = new Random();
+        int randomNumberX = random.nextInt(10);
+        int randomNumberY = random.nextInt(10);
+        int i= 0;
+        coordinatesObstacle.add(i,new Obstacle(randomNumberX,randomNumberY));
+
+
+    }
+
+    public void sonarObstacle(){
+        System.out.println("Scanning");
+        System.out.println("----------------");
+        for (Obstacle i: coordinatesObstacle) {
+            System.out.println("Position X: " + i.getObstacleX() + " " + "Position Y : " + i.getObstacleY());
+        }
+    }
 }

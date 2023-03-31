@@ -328,4 +328,16 @@ public class roverSpec {
             assertEquals("Command does not met requirement expected.", e.getMessage());
         }
     }
+
+    @Test
+    public void createObstacleTest() {
+
+        Location location = new Location();
+
+        location.createObstacle();
+
+        location.sonarObstacle();
+
+
+    }
 }
