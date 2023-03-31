@@ -1,7 +1,9 @@
 import assets.Rover;
 import assets.cardinal.*;
+import assets.exceptions.OrderNotFoundException;
 import org.junit.jupiter.api.Test;
 
+import static com.jayway.jsonpath.internal.path.PathCompiler.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class roverSpec {
@@ -60,6 +62,65 @@ public class roverSpec {
         assertEquals(5, location.getY());
 
     }
+
+
+
+    @Test
+    void backFromNorth() {
+
+        //Then
+        Location location = new Location(5, 5, new North());
+        //Given
+        location.backwards();
+        //When
+        assertEquals(5, location.getX());
+        assertEquals(4, location.getY());
+
+    }
+
+
+    @Test
+    void backFromWest() {
+
+        //Then
+        Location location = new Location(5, 5, new West());
+        //Given
+        location.backwards();
+        //When
+        assertEquals(6, location.getX());
+        assertEquals(5, location.getY());
+
+    }
+
+
+    @Test
+    void backFromSouth() {
+
+        //Then
+        Location location = new Location(5, 5, new South());
+        //Given
+        location.backwards();
+        //When
+        assertEquals(5, location.getX());
+        assertEquals(6, location.getY());
+        assertEquals("South", location.getCardinal().getClass().getSimpleName());
+    }
+
+
+    @Test
+    void backFromEast() {
+
+        //Then
+        Location location = new Location(5, 5, new East());
+        //Given
+        location.backwards();
+        //When
+        assertEquals(4, location.getX());
+        assertEquals(5, location.getY());
+
+    }
+
+
 
 
     @Test
@@ -247,9 +308,24 @@ public class roverSpec {
         //Given
 
         //When
-        assertEquals("North", rover);
+        assertEquals(0, rover.getLocation().getX());
+        assertEquals(9, rover.getLocation().getY());
+        assertEquals("West", rover.getLocation().getCardinal().getClass().getSimpleName());
 
 
     }
 
+    @Test
+    public void testOrderSelectorInvalidOrder() {
+       Rover rover = Rover.builder()
+               .location(new Location(0,0,new South()))
+               .build();
+
+        try {
+            rover.executeOrder("X");
+            fail("Expected OrderNotFoundException to be thrown");
+        } catch (OrderNotFoundException e) {
+            assertEquals("Command does not met requirement expected.", e.getMessage());
+        }
+    }
 }

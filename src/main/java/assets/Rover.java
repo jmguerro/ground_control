@@ -3,11 +3,13 @@ package assets;
 import assets.cardinal.Location;
 import assets.exceptions.OrderNotFoundException;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
+@Builder
 @NoArgsConstructor
 public class Rover {
 
@@ -41,6 +43,8 @@ public class Rover {
 
         }
     }
+
+
 
 
 }
