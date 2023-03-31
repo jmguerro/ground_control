@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="arreglo logica y testing forward y backwards funciona bien segun cardinal">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/Rover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Cardinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/East.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/North.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/South.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/cardinal/West.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/roverSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/roverSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/Rover.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/Rover.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/Cardinal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/East.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/cardinal/East.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/cardinal/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/North.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/cardinal/North.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/South.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/cardinal/South.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/cardinal/West.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/cardinal/West.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/roverSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/roverSpec.class" afterDir="false" />
-    </list>
+    <list default="true" id="26a1fda6-4b0f-4e79-a033-a4316bf3d28a" name="Changes" comment="pos eso" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680258754705</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="turn left/rigth funcional con testing">
+      <created>1680260766671</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680260766671</updated>
+    </task>
+    <task id="LOCAL-00008" summary="pos eso">
+      <created>1680260803815</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680260803815</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -193,6 +189,8 @@
     <MESSAGE value="spec test initzialice" />
     <MESSAGE value="logica de movimientos&#10;&#10;forward y backwards bien echos" />
     <MESSAGE value="arreglo logica y testing forward y backwards funciona bien segun cardinal" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglo logica y testing forward y backwards funciona bien segun cardinal" />
+    <MESSAGE value="turn left/rigth funcional con testing" />
+    <MESSAGE value="pos eso" />
+    <option name="LAST_COMMIT_MESSAGE" value="pos eso" />
   </component>
 </project>
